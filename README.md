@@ -136,3 +136,61 @@ gc.collect()  # Explicitly trigger garbage collection
 ```
 
 ---
+
+
+## Asyncio Python: Episode 3
+
+```
+This episode focuses on the `asyncio` library in Python, which is used for writing asynchronous programs. The `asyncio` module provides a framework for managing asynchronous I/O, coroutines, tasks, and event loops, enabling developers to write highly concurrent code.
+```
+### Prerequisites
+
+- Basic understanding of Python functions and control flow.
+- Familiarity with synchronous programming concepts like loops and exception handling. 
+
+
+### Key Concepts Covered
+
+#### 1. **Event Loop**
+    - The core of `asyncio`, responsible for executing asynchronous tasks and managing I/O operations.
+    - The event loop runs until all tasks are completed or explicitly stopped.
+
+#### 2. **Coroutines**
+    - Special functions defined using `async def` that can be paused and resumed.
+    - Coroutines are the building blocks of asynchronous programming in Python.
+
+#### 3. **Tasks & Tasks Groups**
+    - A higher-level abstraction for managing coroutines.
+    - Created using `asyncio.create_task()` to schedule coroutines for execution.
+
+#### 4. **Awaitables, Cancel and Timeouts**
+    - Objects that can be awaited using the `await` keyword.
+    - Includes coroutines, tasks, and objects implementing the `__await__()` method.
+
+#### 5. **Asynchronous I/O**
+    - Non-blocking I/O operations, such as reading from or writing to files, sockets, or other streams.
+    - Allows the program to perform other tasks while waiting for I/O operations to complete.
+
+#### 6. **Concurrency with asyncio vs Parellalism**
+    - Enables running multiple coroutines concurrently using `asyncio.gather()` or `asyncio.wait()`.
+    - Useful for tasks like making multiple API calls or processing multiple files simultaneously.
+
+#### 6. **Interview questions answered.**
+    - Answered some of the most asked question for you in the video on the asyncio
+
+### Example Topics in the Code
+
+
+- **Defining and Running Coroutines**: Shows how to define `async def` functions and execute them using `await`.
+- **Using `asyncio.sleep()`**: Introduces the concept of pausing execution for a specified duration.
+- **Handling Exceptions in Coroutines**: Explains how to catch and handle exceptions raised within coroutines.
+- **Combining Multiple Coroutines**: Illustrates how to run multiple coroutines concurrently and collect their results.
+
+
+
+### Additional Resources
+
+- [Python Official Documentation on asyncio](https://docs.python.org/3/library/asyncio.html)
+
+
+This episode provides a hands-on introduction to `asyncio`, helping you understand how to write efficient and scalable asynchronous programs in Python.
